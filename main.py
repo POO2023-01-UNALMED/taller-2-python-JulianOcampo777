@@ -25,8 +25,8 @@ class Auto:
         return cantidad
     
     def verificarIntegridad(self):
-        bandera=True  
-        if(self.registro == self.motor.registro):
+        bandera = self.registro == self.motor.registro
+        if(bandera):
             for asiento in self.asientos:
                 if(asiento.registro!= self.registro):
                     bandera = False
